@@ -1,0 +1,494 @@
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_game_activity">
+
+        <!-- IA 2 ELEMENTS -->
+
+        <TextView android:id="@+id/IA2Lbl"
+            android:text="@string/ia_label"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_width="41dp"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:gravity="right"
+            android:layout_x="93dp"
+            android:layout_y="35dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/IA2Num"
+            android:text="@string/num_two"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:layout_width="41dp"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:layout_x="138dp"
+            android:layout_y="35dp"
+            android:textStyle="bold"
+            android:textColor="#010101" />
+
+        <TextView android:id="@+id/IA2MoneyLbl"
+            android:text="@string/money_label"
+            android:layout_column="5"
+            android:layout_row="0"
+            android:layout_width="41dp"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:gravity="right"
+            android:layout_x="166dp"
+            android:layout_y="35dp"
+            android:textColor="#020101"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/IA2MoneyTxt"
+            android:text=""
+            android:layout_column="6"
+            android:layout_row="0"
+            android:layout_width="41dp"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:layout_x="209dp"
+            android:layout_y="34dp"
+            android:textStyle="bold"
+            android:textColor="#010101" />
+
+        <ImageView android:id="@+id/IA2Hand"
+            android:src="@drawable/cards_hand_6"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_width="123dp"
+            android:layout_height="59dp"
+            android:layout_columnSpan="4"
+            android:layout_gravity="center"
+            android:layout_alignTop="@+id/IA2Captain"
+            android:layout_alignStart="@+id/TableCard1"
+            android:layout_x="72dp"
+            android:layout_y="65dp" />
+
+        <ImageView android:id="@+id/IA2Captain"
+            android:src="@drawable/captain_card"
+            android:layout_column="5"
+            android:layout_row="1"
+            android:layout_width="123dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_alignTop="@+id/IA2Inspector"
+            android:layout_alignStart="@+id/TableCard2"
+            android:layout_x="153dp"
+            android:layout_y="65dp" />
+
+        <ImageView android:id="@+id/IA2Inspector"
+            android:src="@drawable/inspector_card"
+            android:layout_column="6"
+            android:layout_row="1"
+            android:layout_width="123dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/IA2Lbl"
+            android:layout_toEndOf="@+id/TableCard2"
+            android:layout_x="195dp"
+            android:layout_y="65dp" />
+
+
+
+        <!-- IA 1 ELEMENTS-->
+
+        <TextView android:id="@+id/IA1Lbl"
+            android:text="@string/ia_label"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_width="30dp"
+            android:layout_height="59dp"
+            android:textSize="10dp"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_x="5dp"
+            android:layout_y="134dp" />
+
+        <TextView android:id="@+id/IA1Num"
+            android:text="@string/num_one"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:layout_width="30dp"
+            android:layout_height="59dp"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_x="18dp"
+            android:layout_y="180dp" />
+
+        <TextView android:id="@+id/IA1MoneyLbl"
+            android:text="@string/money_label"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:layout_width="42dp"
+            android:layout_height="59dp"
+            android:textSize="10dp"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_x="6dp"
+            android:layout_y="145dp" />
+
+        <TextView android:id="@+id/IA1MoneyTxt"
+            android:text=""
+            android:layout_column="1"
+            android:layout_row="5"
+            android:layout_width="30dp"
+            android:layout_height="59dp"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_x="38dp"
+            android:layout_y="191dp" />
+
+        <ImageView android:id="@+id/IA1Hand"
+            android:src="@drawable/cards_hand_6"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_width="123dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_above="@+id/IA1Captain"
+            android:layout_alignParentStart="true"
+            android:layout_x="0dp"
+            android:layout_y="206dp" />
+
+        <ImageView android:id="@+id/IA1Captain"
+            android:src="@drawable/captain_card"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:layout_width="123dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_above="@+id/IA1Inspector"
+            android:layout_alignParentStart="true"
+            android:layout_x="0dp"
+            android:layout_y="264dp" />
+
+        <ImageView android:id="@+id/IA1Inspector"
+            android:src="@drawable/inspector_card"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:layout_width="123dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/IA3Inspector"
+            android:layout_alignParentStart="true"
+            android:layout_x="0dp"
+            android:layout_y="323dp" />
+
+        <!-- IA 3 ELEMENTS -->
+
+        <TextView android:id="@+id/IA3Lbl"
+            android:text="@string/ia_label"
+            android:layout_column="7"
+            android:layout_row="2"
+            android:layout_width="30dp"
+            android:layout_height="59dp"
+            android:textSize="10dp"
+            android:gravity="bottom"
+            android:layout_x="240dp"
+            android:layout_y="129dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/IA3Num"
+            android:text="@string/num_three"
+            android:layout_column="7"
+            android:layout_row="3"
+            android:layout_width="30dp"
+            android:layout_height="59dp"
+            android:textSize="10dp"
+            android:layout_x="255dp"
+            android:layout_y="175dp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <TextView android:id="@+id/IA3MoneyLbl"
+            android:text="@string/money_label"
+            android:layout_column="7"
+            android:layout_row="4"
+            android:layout_width="41dp"
+            android:layout_height="59dp"
+            android:textSize="10dp"
+            android:gravity="bottom"
+            android:layout_x="240dp"
+            android:layout_y="146dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    <TextView android:id="@+id/IA3MoneyTxt"
+        android:text=""
+        android:layout_column="7"
+        android:layout_row="5"
+        android:layout_width="72dp"
+        android:layout_height="59dp"
+        android:textSize="10dp"
+        android:layout_x="275dp"
+        android:layout_y="192dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <ImageView android:id="@+id/IA3Hand"
+            android:src="@drawable/cards_hand_6"
+            android:layout_column="6"
+            android:layout_row="2"
+            android:layout_width="123dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_alignTop="@+id/IA1Hand"
+            android:layout_alignStart="@+id/PlayerCard6"
+            android:layout_x="238dp"
+            android:layout_y="206dp" />
+
+        <ImageView android:id="@+id/IA3Captain"
+            android:src="@drawable/captain_card"
+            android:layout_column="6"
+            android:layout_row="3"
+            android:layout_width="123dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/IA3Hand"
+            android:layout_alignParentEnd="true"
+            android:layout_x="238dp"
+            android:layout_y="264dp" />
+
+        <ImageView android:id="@+id/IA3Inspector"
+            android:src="@drawable/inspector_card"
+            android:layout_column="6"
+            android:layout_row="4"
+            android:layout_width="123dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="39dp"
+            android:layout_above="@+id/Deck"
+            android:layout_alignEnd="@+id/BtnNext"
+            android:layout_x="238dp"
+            android:layout_y="323dp" />
+
+    <!-- PLAYER ELEMENTS-->
+
+        <TextView android:id="@+id/PlayerLbl"
+            android:text="@string/player_label"
+            android:layout_column="2"
+            android:layout_row="7"
+            android:layout_width="41dp"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_x="113dp"
+            android:layout_y="451dp" />
+
+        <TextView android:id="@+id/PlayerMoneyLbl"
+            android:text="@string/money_label"
+            android:layout_column="5"
+            android:layout_row="7"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:gravity="right"
+            android:layout_x="194dp"
+            android:layout_y="451dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/PlayerMoneyTxt"
+            android:text=""
+            android:layout_column="6"
+            android:layout_row="7"
+            android:layout_width="41dp"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:layout_x="247dp"
+            android:layout_y="451dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <ImageView android:id="@+id/PlayerCard1"
+            android:src="@drawable/legal_goods_card"
+            android:layout_column="0"
+            android:layout_row="6"
+            android:layout_width="41dp"
+            android:layout_height="59dp"
+            android:layout_alignTop="@+id/PlayerCard2"
+            android:layout_toStartOf="@+id/PlayerCard2"
+            android:layout_x="21dp"
+            android:layout_y="392dp" />
+
+        <ImageView android:id="@+id/PlayerCard2"
+            android:src="@drawable/illegal_goods_card"
+            android:layout_column="1"
+            android:layout_row="6"
+            android:layout_width="41dp"
+            android:layout_height="59dp"
+            android:layout_alignTop="@+id/PlayerCard3"
+            android:layout_toStartOf="@+id/PlayerCard3"
+            android:layout_x="61dp"
+            android:layout_y="392dp" />
+
+        <ImageView android:id="@+id/PlayerCard3"
+            android:src="@drawable/lieutenant_card"
+            android:layout_column="2"
+            android:layout_row="6"
+            android:layout_width="41dp"
+            android:layout_height="59dp"
+            android:layout_alignTop="@+id/PlayerCard4"
+            android:layout_toStartOf="@+id/PlayerCard4"
+            android:layout_x="101dp"
+            android:layout_y="392dp" />
+
+        <ImageView android:id="@+id/PlayerCard4"
+            android:src="@drawable/captain_card"
+            android:layout_column="3"
+            android:layout_row="6"
+            android:layout_width="41dp"
+            android:layout_height="59dp"
+            android:layout_alignTop="@+id/PlayerCard5"
+            android:layout_toStartOf="@+id/PlayerCard5"
+            android:layout_x="141dp"
+            android:layout_y="392dp" />
+
+        <ImageView android:id="@+id/PlayerCard5"
+            android:src="@drawable/inspector_card"
+            android:layout_column="4"
+            android:layout_row="6"
+            android:layout_width="41dp"
+            android:layout_height="59dp"
+            android:layout_alignTop="@+id/PlayerCard6"
+            android:layout_toStartOf="@+id/PlayerCard6"
+            android:layout_x="181dp"
+            android:layout_y="392dp" />
+
+        <ImageView android:id="@+id/PlayerCard6"
+            android:src="@drawable/inspector_card"
+            android:layout_column="5"
+            android:layout_row="6"
+            android:layout_width="41dp"
+            android:layout_height="59dp"
+            android:layout_alignTop="@+id/PlayerCaptainCard"
+            android:layout_toStartOf="@+id/PlayerCaptainCard"
+            android:layout_x="220dp"
+            android:layout_y="392dp" />
+
+        <ImageView android:id="@+id/PlayerCaptainCard"
+            android:src="@drawable/captain_card"
+            android:layout_column="6"
+            android:layout_row="6"
+            android:layout_width="41dp"
+            android:layout_height="59dp"
+            android:layout_alignTop="@+id/PlayerInspectorCard"
+            android:layout_toStartOf="@+id/PlayerInspectorCard"
+            android:layout_x="259dp"
+            android:layout_y="392dp" />
+
+        <ImageView android:id="@+id/PlayerInspectorCard"
+            android:src="@drawable/inspector_card"
+            android:layout_column="7"
+            android:layout_row="6"
+            android:layout_width="41dp"
+            android:layout_height="59dp"
+            android:layout_above="@+id/BtnNext"
+            android:layout_toEndOf="@+id/IA3Inspector"
+            android:layout_marginBottom="41dp"
+            android:layout_x="298dp"
+            android:layout_y="393dp" />
+
+
+
+        <!-- TABLE ELEMENTS -->
+
+        <ImageView android:id="@+id/TableCard1"
+            android:src="@drawable/legal_goods_card"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:layout_width="41dp"
+            android:layout_height="59dp"
+            android:layout_alignTop="@+id/TableCard2"
+            android:layout_alignStart="@+id/Deck"
+            android:layout_x="141dp"
+            android:layout_y="200dp" />
+
+        <ImageView android:id="@+id/TableCard2"
+            android:src="@drawable/illegal_goods_card"
+            android:layout_column="4"
+            android:layout_row="2"
+            android:layout_width="41dp"
+            android:layout_height="59dp"
+            android:layout_above="@+id/IA3Inspector"
+            android:layout_alignStart="@+id/TableCard4"
+            android:layout_x="184dp"
+            android:layout_y="200dp" />
+
+        <ImageView android:id="@+id/TableCard3"
+            android:src="@drawable/lieutenant_card"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:layout_width="41dp"
+            android:layout_height="59dp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/Deck"
+            android:layout_x="141dp"
+            android:layout_y="255dp" />
+
+        <ImageView android:id="@+id/TableCard4"
+            android:src="@drawable/captain_card"
+            android:layout_column="4"
+            android:layout_row="3"
+            android:layout_width="41dp"
+            android:layout_height="59dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/IA3Captain"
+            android:layout_x="184dp"
+            android:layout_y="255dp" />
+
+        <ImageView android:id="@+id/Deck"
+            android:src="@drawable/deck"
+            android:layout_column="3"
+            android:layout_row="5"
+            android:layout_width="123dp"
+            android:layout_height="59dp"
+            android:layout_columnSpan="2"
+            android:layout_above="@+id/BtnNext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="106dp"
+            android:layout_x="124dp"
+            android:layout_y="320dp" />
+
+    <!-- NEXT BUTTON -->
+
+    <ImageButton android:id="@+id/BtnNext"
+        android:src="@drawable/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="?android:borderlessButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_x="30dp"
+        android:layout_y="481dp" />
+
+    <EditText android:id="@+id/TurnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="127dp"
+        android:layout_y="137dp"
+        android:background="#ffffff"
+        android:text="It&apos;s the turn of Player!"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+</AbsoluteLayout>
+
+
+

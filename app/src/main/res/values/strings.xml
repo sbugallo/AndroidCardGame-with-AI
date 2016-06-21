@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Bonis</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="money_label">Money </string>
+    <string name="ia_label">IA </string>
+    <string name="ia1_label">IA1 </string>
+    <string name="ia2_label">IA2 </string>
+    <string name="ia3_label">IA3 </string>
+    <string name="player_label">Player </string>
+    <string name="num_one">1</string>
+    <string name="num_two">2</string>
+    <string name="num_three">3</string>
+    <string name="result">RESULT: </string>
+    <string name="language">Language (English/Spanish)</string>
+    <string name="difficulty">Difficulty (Normal/Hard)</string>
+    <string name="pick_cards">Pick Your Cards</string>
+
+    <string name="title_activity_iainspection">Inspection Phase</string>
+    <string name="title_activity_user_inspection">Inspection Phase</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_about">About</string>
+
+    <string name="about_fragment">
+        This game was developed by:\n
+        \t- César Bonilla Garrido: psi03.\n
+        \t- Sergio Bugallo Enjamio: psi04.\n
+        \t- Marcos Cela López: psi07.\n
+        \t- Héctor Rivas Pagador: psi19.\n
+        \nVersion 1.0.0
+    </string>
+
+    <string name="rules_fragment">
+        1. Game description\n
+        In Bonis, each player embodies a smuggler who tries to make a fortune by transporting illegal goods, a highly precarious activity since the other players have the opportunity to check your cargo or even seize it if they find suspicious items.
+        This game can be played by a number of players between three and six. Each game lasts about twenty minutes.\n
+        \n2. Content of the game\n
+        \t- 58 legal goods cards.\n
+        \t- 30 illegal goods cards.\n
+        \t- 20 control cards (8 lieutenants, 6 captains and 6 inspectors).\n
+        \n3. Goal\n
+        The goal of the game is to finish with the maximum amount of money in your warehouse meanwhile your opponents try to catch and seize your cargos.\n
+        \n4. Preparation\n
+        \t- Give each player an inspector card and a captain card to each player. Put the other cards in the box because you are not going to use them in the game.\n
+        \t- Shuffle the goods cards alongside the lieutenant cards.\n
+        \t- Optionally you can add the other controller cards to the deck so you can play more random and chaotic game.\n
+        \t- For games with three or four players, remove from the deck:\n
+        \t\t- 18 legal goods cards.\n
+        \t\t- 10 illegal goods cards.\n
+        \t\t- 2 lieutenant cards.\n
+        \t\t- Give each player a hand of four cards and put the rest of the deck in the middle of the table as draw deck.\n
+        \t\t- Put four cards of the draw deck face-up forming a line.\n
+        \t\t- Choose the initial player and play clockwise.\n
+        \n5. Turns\n
+        During each turn, the player will have to do two actions:\n
+        \t- Draw 1 or 2 cards from the deck.\n
+        \t- Try to pass his cargo from his hand to his warehouse.\n
+        5.1. Draw 1 or 2 cards from the deck\n
+        Each player can do the following:\n
+        \t- Draw 2 face-up cards from the center of the table.\n
+        \t- Draw 1 face-up card and 1 from the deck.\n
+        \t- Draw 1 face-up card from the deck.\n
+        \t- Draw 1 face-up from the table.\n
+        When a card from the table is picked up is immediately replaced for the first card in the deck.
+        If a player already has 8 cards in his hand, he won’t be able to draw more cards.
+        A player can choose to not smug or draw cards. If all players decide to pass, the game ends.\n
+        5.2. Try to pass cargo trucks\n
+        Place two, three or four cards from you hand face-down. These cards will be your cargo trucks.\n
+        \n6. Forming your convoy\n
+        A convoy has legal goods and/or illegal goods and also there can be one or more controller card in it.
+        Once the convoy is formed, the opponents decide if they want to inspect it or not.\n
+        \t- If none of the players decide not to inspect your convoy, it will reach your warehouse without any problem.\n
+        \t- If one or more players decide to inspect your goods they will have to play a controller card from their hand.\n
+        There are three types of controllers:\n
+        \t- Lieutenants: They are the lowest rank. They can only inspect one cargo truck.\n
+        \t- Captains: They can inspect two cargo trucks.\n
+        \t- Inspectors: They are the highest rank. They can inspect three cargo trucks.\n
+        If two or more players can do an inspection, the one with the controller with the highest rank will do it. If there are various players with controllers of the same rank, the closest player (clockwise) will do the inspection. The other players retrieve their cards.\n
+        \n7. Result of the control\n
+        The player who played the controller card will flip the cards one by one:\n
+        \t- If the controller only flips legal goods, the convoy will succeed reaching the warehouse and the player will take the controller card to his hand.\n
+        \t- If the controller flips an illegal goods card, the inspection ends and he can take the convoy and the controller card to his own warehouse.\n
+        \t If the controller flips another controller card, the inspection ends and the convoy will reach the warehouse safely. The player will also obtain the controller card from the other player (he will put it in his hand).\n
+        \n8. End of the game\n
+        When the deck ends and the players cannot take the four face-up cards from the table, the final round starts.
+        The player who ended the deck the last round will be the last one playing. If during this round all players pass, the game ends.\n
+        \n9. Score\n
+        Each player will add up the points of the cards in his warehouse:\n
+        \t- Legal goods: 1000$.\n
+        \t- Illegal goods: 4000$.\n
+        \t- Lieutenant: 3000$.\n
+        \t- Captain: 4000$.\n
+        \t- Inspector: 5000$.\n
+        Each controller card in the hand of the player will also give him points:\n
+        \t- Lieutenant: 1000$.\n
+        \t- Captain: 2000$.\n
+        \t- Inspector: 3000$.\n
+        For every illegal goods the player in his hand, the player will subtract 4000$ from his total points.
+        The legal goods that remain in the player’s hand will not give any points.
+    </string>
+
+    <string name="title_activity_cargo">CargoActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_draw">Draw Phase</string>
+
+</resources>

@@ -1,0 +1,100 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_game_activity"
+    android:orientation="vertical">
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:columnCount="6"
+    android:rowCount="6"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="100dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/ResultLbl"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_columnSpan="5"
+        android:layout_height="wrap_content"
+        android:layout_width="281dp"
+        android:text="@string/pick_cards"
+        android:background="#FFFF"
+        android:typeface="monospace"
+        android:textStyle="bold" />
+
+    <!-- Cartas Boca Arriba en la Mesa -->
+
+    <ImageButton android:id="@+id/TableCard1"
+        android:src="@drawable/legal_goods_card_reduced"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_width="70dp"
+        android:layout_height="101dp"  />
+
+    <ImageButton android:id="@+id/TableCard2"
+        android:src="@drawable/legal_goods_card_reduced"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_width="70dp"
+        android:layout_height="101dp"   />
+
+    <ImageButton android:id="@+id/TableCard3"
+        android:src="@drawable/illegal_goods_card_reduced"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:layout_width="70dp"
+        android:layout_height="101dp"  />
+
+    <ImageButton android:id="@+id/TableCard4"
+        android:src="@drawable/illegal_goods_card_reduced"
+        android:layout_column="3"
+        android:layout_row="1"
+        android:layout_width="70dp"
+        android:layout_height="101dp"   />
+
+
+
+    <!-- DECK -->
+
+    <ImageButton android:id="@+id/DeckCard1"
+    android:src="@drawable/truck_card_reduced"
+    android:layout_column="1"
+    android:layout_row="4"
+    android:layout_gravity="bottom|center"
+    android:layout_width="70dp"
+    android:layout_height="101dp" />
+
+    <ImageButton android:id="@+id/DeckCard2"
+        android:src="@drawable/truck_card_reduced"
+        android:layout_column="2"
+        android:layout_row="4"
+        android:layout_gravity="bottom|center"
+        android:layout_width="70dp"
+        android:layout_height="101dp" />
+
+
+
+
+</GridLayout>
+
+    <!-- NEXT BUTTON -->
+
+    <ImageButton android:id="@+id/BtnNext"
+        android:src="@drawable/next"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:borderlessButtonStyle"/>
+</LinearLayout>

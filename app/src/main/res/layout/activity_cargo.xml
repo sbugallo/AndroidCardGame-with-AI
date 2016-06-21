@@ -1,0 +1,115 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_game_activity"
+    android:orientation="vertical">
+<GridLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="7"
+    android:rowCount="6"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="100dp"
+    android:paddingBottom="10dp"
+    android:layout_gravity="center">
+
+    <ImageButton android:id="@+id/CargoCard1"
+        android:src="@drawable/legal_goods_card_reduced"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  />
+
+    <ImageButton android:id="@+id/CargoCard2"
+        android:src="@drawable/legal_goods_card_reduced"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   />
+
+    <ImageButton android:id="@+id/CargoCard3"
+        android:src="@drawable/illegal_goods_card_reduced"
+        android:layout_column="3"
+        android:layout_row="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   />
+
+    <ImageButton android:id="@+id/CargoCard4"
+        android:src="@drawable/illegal_goods_card_reduced"
+        android:layout_column="4"
+        android:layout_row="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   />
+
+    <ImageButton android:id="@+id/CargoCard5"
+        android:src="@drawable/lieutenant_card_reduced"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   />
+
+    <ImageButton android:id="@+id/CargoCard6"
+        android:src="@drawable/illegal_goods_card_reduced"
+        android:layout_column="2"
+        android:layout_row="3"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   />
+
+    <ImageButton android:id="@+id/CargoCard7"
+        android:src="@drawable/captain_card_reduced"
+        android:layout_column="3"
+        android:layout_row="3"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   />
+
+    <ImageButton android:id="@+id/CargoCard8"
+        android:src="@drawable/inspector_card_reduced"
+        android:layout_column="4"
+        android:layout_row="3"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   />
+
+    </GridLayout>
+
+
+    <!-- NEXT BUTTON -->
+
+
+    <ImageButton android:id="@+id/BtnNext"
+        android:src="@drawable/next"
+        android:layout_column="2"
+        android:layout_row="5"
+        android:layout_columnSpan="4"
+        android:layout_rowSpan="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="?android:borderlessButtonStyle" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="15dp"/>
+
+    <ImageButton android:id="@+id/BtnPass"
+        android:src="@drawable/pass"
+        android:layout_column="2"
+        android:layout_row="5"
+        android:layout_columnSpan="4"
+        android:layout_rowSpan="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="?android:borderlessButtonStyle" />
+
+
+</LinearLayout>
